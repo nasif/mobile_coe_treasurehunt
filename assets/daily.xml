@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<questions>
+<date value="2013-11-12">
+    <question>Sachin's Played his debut Test in which country?</question>
+	<option>
+	   <option1>India</option1>
+	   <option2>Pakistan</option2>
+	   <option3>WestIndies</option3>
+	   <option4>SouthAfrica</option4>
+	</option>
+	<answer>Pakistan</answer>
+</date>	
+<date value="2013-11-13">
+	<question>LLVM compiler is used to compile code written in ?</question>
+	<option>
+	   <option1>C,C++</option1>
+	   <option2>Objective C</option2>
+	   <option3>java,scala</option3>
+	   <option4>c,c++,Objective C</option4>
+	</option>
+	<answer>c,c++,Objective C</answer>
+</date>	
+<date value="2013-11-14">	
+	<question>The reality TV show BigBoss is broadcasted in</question>
+	<option>
+	   <option1>Sony</option1>
+	   <option2>Colours</option2>
+	   <option3>Star Plus</option3>
+	   <option4>Life Ok</option4>
+	</option>
+	<answer>Colours</answer>
+</date>	
+<date value="2013-11-15">	
+	<question>Which Team got first prize in Tavant Apptitude</question>
+	<option>
+	   <option1>Nemesis</option1>
+	   <option2>BruteForce</option2>
+	   <option3>Team3</option3>
+	   <option4>Team4</option4>
+	</option>
+	<answer>BruteForce</answer>
+</date>	
+</questions>
