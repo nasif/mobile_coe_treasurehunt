@@ -9,5 +9,21 @@
     <string name="scan">Scan</string>
     <string name="treasure_hunt">Treasure</string>
     <string name="result">Results</string>
+    
+     <string name="FHI">1) <b><u>Instructions for daily competition.</u></b></string>
+     <string name="FI"><i>* Android OS has become the leading platform for mobile devices such as smartphones and tablet computers in recent years. The demand for Android applications and skilled Android developers continues rising significantly and jobs for Android development are still hot for the years to come. If you are a Java developer and want to join the trend, then you have a good </i></string>
+     <string name="SI"><i>* Second Instruction.</i></string>
+     <string name="TI"><i>* Third Instruction.</i></string>
+     <string name="FoI"><i>* Fourth Instruction.</i></string>
+     <string name="FiI"><i>* Fifth Instruction.</i></string>
+     <string name="SiI"><i>* Sixth Instruction.</i></string>
+     
+     <string name="SHI">2)<b><u>Instructions for Treasure Hunt.</u></b></string>
+     <string name="SFI"><i>* First Instruction</i></string>
+     <string name="SSI"><i>* Second Instruction.</i></string>
+     <string name="STI"><i>* Third Instruction.</i></string>
+     <string name="SFoI"><i>* Fourth Instruction.</i></string>
+     <string name="SFiI"><i>* Fifth Instruction.</i></string>
+     <string name="SSiI"><i>* Sixth Instruction.</i></string>
 
 </resources>
