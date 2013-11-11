@@ -6,16 +6,11 @@ import java.util.Date;
 public class QuestionData {
 	
 	
-	private Date date=null;
+	
 	private String question=null;
 	private ArrayList<String>answer_array=null;
 	private String answer=null;
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
+	
 	public String getQuestion() {
 		return question;
 	}
