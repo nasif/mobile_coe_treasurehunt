@@ -26,7 +26,7 @@ public class DailyQuestionParser extends BaseParser {
 	private String mstartTagName;
 	private String mEndTagName;
 	private boolean isStart;
-	private HashMap<String, QuestionData>mdata;
+	private ArrayList<QuestionData>mdata;
 	private QuestionData eachQuestion;
 	private String date=null;
 	private ArrayList<String>options=null;
@@ -49,7 +49,7 @@ public class DailyQuestionParser extends BaseParser {
 		case XmlPullParser.START_TAG:
 			String localName = pullParser.getName();
 			if (localName.equals(ParserTags.TAG_QUESTIONS)) {
-				mdata=new HashMap<String, QuestionData>();
+				mdata=new ArrayList<QuestionData>();
 			}
 			else if (localName.equals(ParserTags.TAG_DATE)) {
 				eachQuestion = new QuestionData();
@@ -69,12 +69,10 @@ public class DailyQuestionParser extends BaseParser {
 				options.add(temptoptions);
 			}else if(localName1.equals(ParserTags.TAG_OPTION3)){
 				options.add(temptoptions);
-			}else if(localName1.equals(ParserTags.TAG_OPTION4)){
-				options.add(temptoptions);
 			}else if (localName1.equals(ParserTags.TAG_OPTION)) {
 				eachQuestion.setAnswer_array(options);
 			}else if(localName1.equals(ParserTags.TAG_DATE)){
-				mdata.put(date, eachQuestion);
+				mdata.add(eachQuestion);
 			}
 			mEndTagName=localName1;
 			isStart = false;
@@ -94,13 +92,15 @@ public class DailyQuestionParser extends BaseParser {
 			
 			if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_QUESTION)) {
 				eachQuestion.setQuestion(pullParser.getText());
-			} else if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_OPTION1)) {
+			}else if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_QIMAGE)) {
+				eachQuestion.setQuesImage(pullParser.getText());
+			}else if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_HINT)) {
+				eachQuestion.setHint(pullParser.getText());
+			}else if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_OPTION1)) {
 				temptoptions=pullParser.getText();
 			}else if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_OPTION2)) {
 				temptoptions=pullParser.getText();
 			}else if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_OPTION3)) {
-				temptoptions=pullParser.getText();
-			}else if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_OPTION4)) {
 				temptoptions=pullParser.getText();
 			}else if (mstartTagName.equalsIgnoreCase(ParserTags.TAG_ANSWER)) {
 				eachQuestion.setAnswer(pullParser.getText());
@@ -110,8 +110,7 @@ public class DailyQuestionParser extends BaseParser {
 	}
 
 	@Override
-	public HashMap<String, QuestionData> getData() {
-		Log.i("TAG","jsondata data"+new JSONObject(mdata));
+	public  ArrayList<QuestionData> getData() {
 		return mdata;
 	}
 }

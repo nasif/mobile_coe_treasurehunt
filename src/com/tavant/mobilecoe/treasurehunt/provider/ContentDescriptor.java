@@ -59,6 +59,9 @@ public class ContentDescriptor {
 			public static final String HINT  = "hint";
 			public static final String STATUS  = "status";
 			public static final String TIME  = "time";
+			public static final String ERRORHINT_ONE  = "errorhint_one";
+			public static final String ERRORHINT_TWO  = "errorhint_two";
+			public static final String ERRORHINT_THREE  = "errorhint_three";
 		}
 
 	}

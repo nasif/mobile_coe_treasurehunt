@@ -103,15 +103,15 @@ public class ScanActivity extends Activity implements OnClickListener {
 	}
 
 	private void parsedailyTest() {
-		AssetManager assetManager = getResources().getAssets();
-		InputStream inputStream = null;
-		try {
-			inputStream = assetManager.open("daily.xml");
-			parser=new DailyQuestionParser(inputStream);
-			map=parser.getData();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		AssetManager assetManager = getResources().getAssets();
+//		InputStream inputStream = null;
+//		try {
+//			inputStream = assetManager.open("daily.xml");
+//			parser=new DailyQuestionParser(inputStream);
+//			map=parser.getData();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 

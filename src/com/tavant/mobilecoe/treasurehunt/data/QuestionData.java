@@ -10,7 +10,21 @@ public class QuestionData {
 	private String question=null;
 	private ArrayList<String>answer_array=null;
 	private String answer=null;
+	private String quesImage=null;
+	private String hint=null;
 	
+	public String getQuesImage() {
+		return quesImage;
+	}
+	public void setQuesImage(String quesImage) {
+		this.quesImage = quesImage;
+	}
+	public String getHint() {
+		return hint;
+	}
+	public void setHint(String hint) {
+		this.hint = hint;
+	}
 	public String getQuestion() {
 		return question;
 	}

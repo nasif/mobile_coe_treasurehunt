@@ -1,6 +1,7 @@
 package com.tavant.mobilecoe.treasurehunt.parser;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -48,6 +49,6 @@ public abstract class BaseParser {
 
 	public abstract void parseText();
 	
-	public abstract HashMap<String, QuestionData> getData();
+	public abstract ArrayList<QuestionData> getData();
 
 }

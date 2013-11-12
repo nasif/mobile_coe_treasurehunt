@@ -47,12 +47,15 @@ public class QuestionDatabase extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		db.execSQL("CREATE TABLE " + ContentDescriptor.TreasureHuntQuestion.NAME_TABLE+ " ( " +
 				ContentDescriptor.TreasureHuntQuestion.Cols.ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-				ContentDescriptor.TreasureHuntQuestion.Cols.NUMBER + " INTEGER NOT NULL, " +
+				ContentDescriptor.TreasureHuntQuestion.Cols.NUMBER + " TEXT NOT NULL, " +
 				ContentDescriptor.TreasureHuntQuestion.Cols.QUESTION 	+ " TEXT NOT NULL, " +
 				ContentDescriptor.TreasureHuntQuestion.Cols.ANSWER + " TEXT NOT NULL, " +
 				ContentDescriptor.TreasureHuntQuestion.Cols.HINT + " TEXT NOT NULL, " +
-				ContentDescriptor.TreasureHuntQuestion.Cols.STATUS + " INTEGER NOT NULL, " +
-				ContentDescriptor.TreasureHuntQuestion.Cols.TIME + " TEXT NOT NULL, " +
+				ContentDescriptor.TreasureHuntQuestion.Cols.STATUS + " INTEGER, " +
+				ContentDescriptor.TreasureHuntQuestion.Cols.TIME + " TEXT, " +
+				ContentDescriptor.TreasureHuntQuestion.Cols.ERRORHINT_ONE + " TEXT NOT NULL, " +
+				ContentDescriptor.TreasureHuntQuestion.Cols.ERRORHINT_TWO + " TEXT NOT NULL, " +
+				ContentDescriptor.TreasureHuntQuestion.Cols.ERRORHINT_THREE + " TEXT NOT NULL, " +
 				"UNIQUE (" + 
 					ContentDescriptor.TreasureHuntQuestion.Cols.ID + 
 				") ON CONFLICT REPLACE)"

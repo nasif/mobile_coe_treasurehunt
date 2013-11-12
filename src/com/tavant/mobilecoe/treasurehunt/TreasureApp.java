@@ -5,22 +5,35 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 import android.app.Application;
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.tavant.mobilecoe.treasurehunt.data.QuestionData;
+import com.tavant.mobilecoe.treasurehunt.parser.DailyQuestionParser;
+
 public class TreasureApp extends Application {
 	
 	
 	private AsyncTask<Void, Void,Integer>task;
+	private DailyQuestionParser parser=null;
+	
+	private AsyncTask<Void, Void, Integer>taskparser;
+	
+	private ArrayList<QuestionData>mdata=null;
 	
 	@Override
 	public void onCreate() {
 		super.onCreate();
 		startcopyingTheImage();
+		startParsing();
 	}
+
+	
 
 	private void startcopyingTheImage() {
 		task=new AsyncTask<Void, Void, Integer>() {
@@ -85,6 +98,45 @@ public class TreasureApp extends Application {
 	    while((read = in.read(buffer)) != -1){
 	      out.write(buffer, 0, read);
 	    }
+	}
+	
+	
+	private void startParsing() {
+		taskparser=new AsyncTask<Void, Void, Integer>() {
+			@Override
+			protected Integer doInBackground(Void... params) {
+				AssetManager assetManager = getResources().getAssets();
+				InputStream inputStream = null;
+				try {
+					inputStream = assetManager.open("daily.xml");
+					parser=new DailyQuestionParser(inputStream);
+					mdata=parser.getData();
+					Iterator<QuestionData> it = mdata.iterator();
+					while(it.hasNext())
+					{
+						QuestionData obj = it.next();
+						Log.i("TAG","questiondata"+obj.getQuestion()+""+obj.getAnswer()+"::"+obj.getAnswer_array().get(0));
+					    //Do something with obj
+					}
+				}catch(Exception e){
+					e.printStackTrace();
+					return -1;
+				}
+				return 0;	
+			}
+			
+		
+
+			@Override
+			protected void onPostExecute(Integer result) {
+				super.onPostExecute(result);
+				if(result==-1)
+					Log.i("TAG","Error during copying files");
+				else
+				Log.i("TAG","All are copied");
+			}
+		};
+		
 	}
 
 }

@@ -1,43 +1,81 @@
 <?xml version="1.0"?>
 <questions>
-<date value="2013-11-12">
-    <question>Sachin's Played his debut Test in which country?</question>
-	<option>
-	   <option1>India</option1>
-	   <option2>Pakistan</option2>
-	   <option3>WestIndies</option3>
-	   <option4>SouthAfrica</option4>
-	</option>
-	<answer>Pakistan</answer>
-</date>	
 <date value="2013-11-13">
-	<question>LLVM compiler is used to compile code written in ?</question>
-	<option>
-	   <option1>C,C++</option1>
-	   <option2>Objective C</option2>
-	   <option3>java,scala</option3>
-	   <option4>c,c++,Objective C</option4>
-	</option>
-	<answer>c,c++,Objective C</answer>
+	<qimage>q1.jpg</qimage>
+    <question>Not a single hole in the wall!</question>	
+	<answer>rahul dravid</answer>
+	<hint>Wazza! Knocked that one out for a six! The location of the next clue is at the finance department in CSRIE<hint/>
+	<errors>
+		<ehintone>Sorry! But Krishanan PP wants you to try again.</ehintone>
+		<ehinttwo>Bowled! Give it another try.</ehinttwo>
+		<ehintthree>Nope! Close but not enough! Care to try again? </ehintthree>		
+	</errors>
+</date>
+<date value="2013-11-13">
+	<qimage>q2.jpg</qimage>
+    <question>Which Indian phone manufacturer is nothing like anything?</question>	
+	<answer>micromax</answer>
+	<hint>Excellent! You have begun the hunt successfully! The location of the next clue is at library.<hint/>
+	<errors>
+		<ehintone>Sorry! But Wolverine wants you to try again.</ehintone>
+		<ehinttwo>Oops! Give it another try. You know you want to!</ehinttwo>
+		<ehintthree>Nope! That was nothing like anything close to the answer :P. Give it another go </ehintthree>		
+	</errors>
 </date>	
+<date value="2013-11-13">	
+	<qimage>q3.jpg</qimage>
+    <question>The pretty acrobat diva</question>	
+	<answer>katrina kaif</answer>
+	<hint>MashAllah! Kya bath hai Tiger! The next location is at in front of Krishanan PP's cabin (CSRIE)<hint/>
+	<errors>
+		<ehintone>Sorry! But Aaliyah wants you to try again.</ehintone>
+		<ehinttwo>Wrong move! Get back on that balance rope!</ehinttwo>
+		<ehintthree>Nope! She knows you can do it! Again.</ehintthree>		
+	</errors>
+</date>
+<date value="2013-11-13">	
+	<qimage>q5.jpg</qimage>
+    <question>Next generation battery operated car maker</question>	
+	<answer>elon musk</answer>
+	<hint>Electrifying! Take the hyperloop to the next clue location which is in the Elevator(CSRIE)!<hint/>
+	<errors>
+		<ehintone>Sorry! Guess again?</ehintone>
+		<ehinttwo>Oops! Give it another try. You know you want to!</ehinttwo>
+		<ehintthree>Nope! You dont pay anything to try again pal! </ehintthree>		
+	</errors>
+</date>	
+<date value="2013-11-13">	
+	<qimage>q4.jpg</qimage>
+    <question>SEO matters</question>	
+	<answer>page rank</answer>
+	<hint>Simple as googling! The location of the next clue is in front of the HR Dept in CSRIE<hint/>
+	<errors>
+		<ehintone>Sorry! Have you tried googling it?.</ehintone>
+		<ehinttwo>Error! Let's try that again!</ehinttwo>
+		<ehintthree>Found no result! Retry with modified answer? </ehintthree>		
+	</errors>
+</date>
+<date value="2013-11-13">	
+	<qimage>q6.jpg</qimage>
+    <question>Yet another project of Google</question>	
+	<answer>project loon</answer>
+	<hint>You popped that one! You are so close to the treasure. The last clue is in the Noida Office!!! Just Kidding :P
+	The final clue can be found at the Mobility Booth (Booth #1).See you there, 14th Nov 2013, Engage!<hint/>
+	<errors>
+		<ehintone>Sorry! The answer is blowing in the wind. Try again.</ehintone>
+		<ehinttwo>Oops! You didn't hit the hotspot. Refresh search?</ehinttwo>
+		<ehintthree>Nope! Make the next one count!</ehintthree>		
+	</errors>
+</date>		
 <date value="2013-11-14">	
-	<question>The reality TV show BigBoss is broadcasted in</question>
-	<option>
-	   <option1>Sony</option1>
-	   <option2>Colours</option2>
-	   <option3>Star Plus</option3>
-	   <option4>Life Ok</option4>
-	</option>
-	<answer>Colours</answer>
-</date>	
-<date value="2013-11-15">	
-	<question>Which Team got first prize in Tavant Apptitude</question>
-	<option>
-	   <option1>Nemesis</option1>
-	   <option2>BruteForce</option2>
-	   <option3>Team3</option3>
-	   <option4>Team4</option4>
-	</option>
-	<answer>BruteForce</answer>
+	<qimage>q7.jpg</qimage>
+    <question>Ask the person on the booth for a hint?</question>	
+	<answer>tim berners lee</answer>
+	<hint>You Hit GOLD!!!!! Congratulations! Claim your prize at the booth!<hint/>
+	<errors>
+		<ehintone>Sorry! Imagine if you didn't have the internet to find the answer. </ehintone>
+		<ehinttwo>Oops! Give it another try. You know you want to!</ehinttwo>
+		<ehintthree>Nope! Skynet needs its. Once more? </ehintthree>		
+	</errors>
 </date>	
 </questions>
