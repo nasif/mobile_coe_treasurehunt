@@ -72,25 +72,25 @@ public class CommonDailyPreferences {
 				Activity.MODE_PRIVATE);
 		editor = pref.edit();
 
-		isscanbuttonshowed_12=pref.getBoolean(Constant.isscanbuttonshowed_12, true);
-		iscaptured_12=pref.getBoolean(Constant.iscaptured_12, true);
-		isubmitted_12=pref.getBoolean(Constant.isubmitted_12, true);
+		isscanbuttonshowed_12=pref.getBoolean(Constant.isscanbuttonshowed_12, false);
+		iscaptured_12=pref.getBoolean(Constant.iscaptured_12, false);
+		isubmitted_12=pref.getBoolean(Constant.isubmitted_12, false);
 		ansString_12=pref.getString(Constant.ansString_12,null);
 
-		isscanbuttonshowed_13=pref.getBoolean(Constant.isscanbuttonshowed_13, true);
-		iscaptured_13=pref.getBoolean(Constant.iscaptured_13, true);
-		isubmitted_13=pref.getBoolean(Constant.isubmitted_13, true);
+		isscanbuttonshowed_13=pref.getBoolean(Constant.isscanbuttonshowed_13, false);
+		iscaptured_13=pref.getBoolean(Constant.iscaptured_13, false);
+		isubmitted_13=pref.getBoolean(Constant.isubmitted_13, false);
 		ansString_13=pref.getString(Constant.ansString_13,null);
 
-		isscanbuttonshowed_14=pref.getBoolean(Constant.isscanbuttonshowed_14, true);
-		iscaptured_14=pref.getBoolean(Constant.iscaptured_14, true);
-		isubmitted_14=pref.getBoolean(Constant.isubmitted_14, true);
+		isscanbuttonshowed_14=pref.getBoolean(Constant.isscanbuttonshowed_14, false);
+		iscaptured_14=pref.getBoolean(Constant.iscaptured_14, false);
+		isubmitted_14=pref.getBoolean(Constant.isubmitted_14, false);
 		ansString_14=pref.getString(Constant.ansString_14,null);
 
 
-		isscanbuttonshowed_15=pref.getBoolean(Constant.isscanbuttonshowed_15, true);
-		iscaptured_15=pref.getBoolean(Constant.iscaptured_15, true);
-		isubmitted_15=pref.getBoolean(Constant.isubmitted_15, true);
+		isscanbuttonshowed_15=pref.getBoolean(Constant.isscanbuttonshowed_15, false);
+		iscaptured_15=pref.getBoolean(Constant.iscaptured_15, false);
+		isubmitted_15=pref.getBoolean(Constant.isubmitted_15, false);
 		ansString_15=pref.getString(Constant.ansString_15,null);
 	}
 

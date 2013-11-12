@@ -63,11 +63,6 @@ private void createInitialTabs() {
 			getResources().getDrawable(R.drawable.ic_action_camera))
 			.setContent(new Intent(this, ScanActivity.class)));
 
-	mTabHost.addTab(mTabHost.newTabSpec(TREASURE_TAB).setIndicator(
-			TREASURE_TAB,
-			getResources().getDrawable(R.drawable.ic_action_camera))
-			.setContent(new Intent(this, TreasureActivity.class)));
-
 	mTabHost.addTab(mTabHost.newTabSpec(SCORE_TAB).setIndicator(SCORE_TAB,
 			getResources().getDrawable(R.drawable.ic_action_share))
 			.setContent(new Intent(this, ResultActivity.class)));
